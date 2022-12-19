@@ -1,0 +1,11 @@
+name: first-workflow
+on:
+  push: [master]
+  pull-request: [master]
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo "start installing dependencies"
+    - run: npm install
+    - run: echo "start building app"
+    - run: npm build
