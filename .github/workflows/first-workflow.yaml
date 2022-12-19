@@ -1,7 +1,9 @@
 name: first-workflow
 on:
-  push: [master]
-  pull_request: [master]
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
